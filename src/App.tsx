@@ -51,8 +51,8 @@ function App() {
     fontSize: "2rem",
     textAlign: "center"
    }}>
-    {isLoser?"Loser":""}
-    {isWinner?"Winner":""}
+    {isLoser?"You Lose!! Refresh to play again....":""}
+    {isWinner?"Fantastic!! You win!! Refresh to play again....":""}
    </div>
    <HangmanDrawing numOfGuess={incorrectGuesses.length}/>
    <HangmanWord reveal={isLoser} wordToGuess={guessWord} guessedLetters={guessLetters}/>
